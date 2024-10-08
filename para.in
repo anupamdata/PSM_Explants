@@ -1,0 +1,53 @@
+1                !nrun    ! nrun >1 means restarting the simulation. 
+10000		 !Npt     !Max number of cells
+50000000         !Nt      !Max number of steps
+10   		 !ndata   !Storage parameter
+400   		 !Npy     !number of particles in the tailbud boundary
+19.0d0		 !Aratio  !Aspect Ratio of the Rectangular Boundary   
+60    		 !Npx0    !Number of particles in the AP direction at the beginning
+10               !Npr0     !Initial size of the sphear (Cell)
+20               !Npr1     !Initial size of the sphear (Cell+Matrix)
+200   		 !Npx     !Max number of particles in the AP direction
+0.60d0           !Df      !Single cell diffusivity/activity
+80623  		 !iseed   !Seed for the Mesenne Twister
+ 20.0d0 	 !kss   ! Cell-cell repulsion force constant
+ 200.0d0 	 !kas   ! Repulsion between matrix and the cell constant
+   0.0d0 	 !Es    ! Elasticity Coefficient of substrate
+1.0d0    	 !a     ! Cell size
+2.5d0            !rlj   ! LJ Cut-off length
+50.0d0   	 !gm      ! Viscous friction
+ 10.0d0   	 !mu      ! Viscous friction of material
+ 20.0d0   	 !tau    ! Slowest time scale
+ 1.0d10   	 !taud   ! Decay time of the Slowest time scale
+ 1.0d10   	 !taudw  ! Decay time of the Slowest time scale
+  1.0d0   	 !tauG   ! Growth relaxation time 
+0.5d0   	 !ls_cut ! ReLinking cutoff 
+0.00100d0 	 !delta
+1.00d0    	 !rhos  ! Cell packing density of matrix at the beginning
+0.60d0    	 !rho0  ! Maximum cell packing density at the beginning
+0.45d0    	 !rhom  ! Maximum cell packing density
+0.400d0           !eps0  ! The minima in LJ for Cells
+0.010d0           !epsm  ! The minima in LJ for Matrix
+1.0000d0           !epst  ! The minima in LJ repulsion between TB & Rest
+1.0d0            !Ar    ! Coefficient for repulsive part
+2.0d0            !Aa0   ! Coefficient for attractive part
+0.5d0            !Aaw0  ! Coefficient for attractive part for the walls
+0.02d0           !Aamin ! Coefficient for (min.) attractive part
+0.70d0           !rhoc  ! Density at which attraction potential becomes strong
+0.01d0           !l_rho ! length scale over which attraction potential changes its sign.
+8.d0             !rn    ! LJ, repulsive force power
+4.d0             !an    ! LJ, attractive force power
+12.d0            !rnw   ! LJ, repulsive force power for walls
+6.d0             !anw   ! LJ, attractive force power for walls
+12.d0            !r12   ! LJ, repulsive force power
+6.d0             !a6    ! LJ, attractive force power
+0.22428          !omgL  ! Clock, Frequency of the cell at the TB
+0.05d0           !eps_theta0 ! Clock, coupling between the cells
+.true.           !FGF_grad     ! Flag for motility      
+.true.           !density_Aa     ! Flag for density dependent Aa
+.false.          !stress_dependent     ! Flag for stress dependent proliferation
+.false.          !uniform_prol         ! Flag for uniform proliferation
+.false.          !two_phase            ! Flag for two phase system 
+.true.           !TB_1D                ! Flag for 1D TB case 
+.false.          !Clock                ! Flag for phase associated with cells
+.false.          !TB_Wall              ! Flag for rigid wall to mimic a channel
